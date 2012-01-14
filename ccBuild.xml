@@ -179,13 +179,13 @@
   </target>
    
   <!-- gera o .war e copia para a pasta dist do projeto -->  
-  <target name="war" depends="compilaSrc">  
+  <target name="war" depends="emma">  
     <echo>gerando war file para deploy</echo>  
     <propertyfile file="deployid.properties">
       <entry key="build.count" default="0" type="int" operation="+" value="1" pattern="0000"/>
     </propertyfile>
      <property file="deployid.properties"/>
-    <war destfile="${dist.dir}/${ant.project.name}##${build.count}.war" webxml="${web.dir}/WEB-INF/web.xml">  
+    <war destfile="${dist.dir}/${ant.project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">  
         <fileset dir="${web.dir}">  
             <include name="**/*.*"/>                
             <exclude name="**/*web.xml"/>               
