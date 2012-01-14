@@ -14,7 +14,7 @@ public class AllTests {
 		suite.addTestSuite(InsereClienteTeste.class);
 		suite.addTestSuite(InsereLancamentoTeste.class);
 		suite.addTestSuite(ClienteDAORemoverTeste.class);
-                suite.addTestSuite(CreateCustomersFunctionalTest.class);
+                //suite.addTestSuite(CreateCustomersFunctionalTest.class);
                 suite.addTestSuite(AccountLimitTest.class);
 		//$JUnit-END$
 		return suite;
