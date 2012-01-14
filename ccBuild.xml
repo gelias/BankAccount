@@ -1,4 +1,4 @@
-<project name="BankAccount" basedir="." default="emma">
+<project name="BankAccount" basedir="." default="war">
 
   <!--  Diretorios do projeto  -->
   <property name="src.dir"            value="src"/>
